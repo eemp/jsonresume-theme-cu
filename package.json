@@ -2,6 +2,9 @@
   "name": "jsonresume-theme-onepage",
   "version": "0.0.3",
   "description": "Compact, printable theme for JSON Resume",
+  "scripts": {
+    "start": "resume serve --dir . --port 3000"
+  },
   "author": "Ainsley Chong",
   "repository": {
     "type": "git",
@@ -17,5 +20,7 @@
   },
   "homepage": "https://github.com/ainsleychong/jsonresume-theme-onepage",
   "main": "index.js",
-  "devDependencies": {}
+  "devDependencies": {
+    "resume-cli": "^1.2.7"
+  }
 }

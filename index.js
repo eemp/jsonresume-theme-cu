@@ -4,10 +4,10 @@ var Handlebars = require("handlebars");
 COURSES_COLUMNS = 3;
 
 PREPEND_SUMMARY_CATEGORIES = [
-  "work",
-  "volunteer",
-  "awards",
-  "publications"
+  //"work",
+  //"volunteer",
+  //"awards",
+  //"publications"
 ];
 
 function validateArray(arr) {
