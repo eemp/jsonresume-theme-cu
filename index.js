@@ -50,14 +50,24 @@ function render(resume) {
     }
   });
 
-	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
-	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-	return Handlebars.compile(tpl)({
-		css: css,
-		resume: resume
-	});
+  var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
+  var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
+  return Handlebars.compile(tpl)({
+    css: css,
+    resume: resume
+  });
 }
 
 module.exports = {
-	render: render
+  pdfRenderOptions: {
+    margin: { // default chrome margins
+      top: '0.4in',
+      right: '0.4in',
+      bottom: '0.4in',
+      left: '0.4in',
+    },
+    mediaType: 'print',
+    printBackground: false,
+  },
+  render: render,
 };
