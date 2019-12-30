@@ -120,6 +120,11 @@
         <span class='title'>
           {{#if name}}{{name}}{{/if}}
         </span>
+        {{#if startDate}}
+        <span class='date'>
+          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+        </span>
+        {{/if}}
       </div>
       {{#if website}}
       <div class='website'>
