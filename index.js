@@ -60,10 +60,10 @@ function render(resume) {
 
 module.exports = {
   pdfRenderOptions: {
-    margin: { // default chrome margins
-      top: '0.4in',
+    margin: {
+      top: '0.8in',
       right: '0.4in',
-      bottom: '0.4in',
+      bottom: '0.8in',
       left: '0.4in',
     },
     mediaType: 'print',
